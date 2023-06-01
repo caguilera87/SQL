@@ -1,0 +1,23 @@
+--Create a grocery store database
+
+CREATE TABLE baseball_goods (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, size TEXT, aisle INTEGER);
+
+
+INSERT INTO baseball_goods VALUES (1, "helmet", 10, "small", 2); 
+INSERT INTO baseball_goods VALUES (2, "helmet", 10, "medium", 2);
+INSERT INTO baseball_goods VALUES (3, "helmet", 10, "large", 2); 
+INSERT INTO baseball_goods VALUES (4, "jersey", 15, "small", 2); 
+INSERT INTO baseball_goods VALUES (5, "jersey", 15, "medium", 2);
+INSERT INTO baseball_goods VALUES (6, "jersey", 15, "large", 2);
+INSERT INTO baseball_goods VALUES (7, "hat", 5, "small", 2);
+INSERT INTO baseball_goods VALUES (8, "hat", 5, "medium", 2);
+INSERT INTO baseball_goods VALUES (9, "hat", 5, "large", 2);
+INSERT INTO baseball_goods VALUES (10, "pant", 20, "small", 2);
+INSERT INTO baseball_goods VALUES (11, "pants", 20, "medium", 2);
+INSERT INTO baseball_goods VALUES (12, "pants", 20, "large", 2);
+INSERT INTO baseball_goods VALUES (13, "socks", 5, "small", 2);
+INSERT INTO baseball_goods VALUES (14, "socks", 5, "medium", 2);
+INSERT INTO baseball_goods VALUES (15, "socks", 5, "large", 2);
+
+--display the database ordered by price.
+SELECT * FROM baseball_goods ORDER BY price;
